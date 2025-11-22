@@ -2,58 +2,62 @@ Cooking!
 
 
 studybuddy/ <br>
+│<br>
+├── backend/                     # (Later) Spring Boot project lives here<br>
+│   └── (empty for now)<br>
 │
-├── backend/                     # (Later) Spring Boot project lives here
-│   └── (empty for now)
-│
-├── frontend/                    # Vite + React app
+├── frontend/                    # Vite + React app<br>
 │   ├── index.html
-│   ├── vite.config.js
-│   ├── package.json
-│   ├── jsconfig.json            # Path aliases for JSX
-│   └── src/
-│       ├── main.jsx
-│       ├── App.jsx
+│   ├── vite.config.js<br>
+│   ├── package.json<br>
+│   ├── jsconfig.json            # Path aliases for JSX<br>
+│   └── src/<br>
+│       ├── main.jsx<br>
+│       ├── App.jsx<br>
+│       │<br>
+│       ├── assets/<br>
+│       │   └── logo.png<br>
+│       │<br>
+│       ├── pages/               # Pages (Feed, Add Resource, Profile, etc.)<br>
+│       │   ├── Feed.jsx<br>
+│       │   ├── AddResource.jsx<br>
+│       │   ├── Leaderboard.jsx<br>
+│       │   ├── Reviews.jsx<br>
+│       │   └── Settings.jsx<br>
+│       │<br>
+│       ├── components/          # Reusable UI components<br>
+│       │   ├── Navbar.jsx<br>
+│       │   ├── ResourceCard.jsx<br>
+│       │   ├── ReviewForm.jsx<br>
+│       │   ├── RatingStars.jsx<br>
+│       │   └── Loader.jsx<br>
 │       │
-│       ├── assets/
-│       │   └── logo.png
-│       │
-│       ├── pages/               # Pages (Feed, Add Resource, Profile, etc.)
-│       │   ├── Feed.jsx
-│       │   ├── AddResource.jsx
-│       │   ├── Leaderboard.jsx
-│       │   ├── Reviews.jsx
-│       │   └── Settings.jsx
-│       │
-│       ├── components/          # Reusable UI components
-│       │   ├── Navbar.jsx
-│       │   ├── ResourceCard.jsx
-│       │   ├── ReviewForm.jsx
-│       │   ├── RatingStars.jsx
-│       │   └── Loader.jsx
-│       │
-│       ├── context/             # Global state management
-│       │   └── ResourceContext.jsx
-│       │
-│       ├── hooks/               # Custom hooks
-│       │   ├── useLocalStorage.js
-│       │   └── useApi.js        # (For future Spring Boot integration)
-│       │
-│       ├── services/            # API clients (for Spring Boot backend)
-│       │   ├── apiClient.js
-│       │   └── resourceService.js
-│       │
-│       ├── styles/              # Global CSS / Tailwind / utilities
-│       │   └── globals.css
-│       │
-│       └── utils/               # Helpers
-│           ├── uuid.js
-│           ├── sorting.js
-│           └── validation.js
-│
-└── README.md
+│       ├── context/             # Global state management<br>
+│       │   └── ResourceContext.jsx<br>
+│       │<br>
+│       ├── hooks/               # Custom hooks<br>
+│       │   ├── useLocalStorage.js<br>
+│       │   └── useApi.js        # (For future Spring Boot integration)<br>
+│       │<br>
+│       ├── services/            # API clients (for Spring Boot backend)<br>
+│       │   ├── apiClient.js<br>
+│       │   └── resourceService.js<br>
+│       │<br>
+│       ├── styles/              # Global CSS / Tailwind / utilities<br>
+│       │   └── globals.css <br>
+│       │<br>
+│       └── utils/               # Helpers<br>
+│           ├── uuid.js<br>
+│           ├── sorting.js<br>
+│           └── validation.js <br>
+│<br>
+└── README.md<br>
+
+
 # Commands
-cd frontend
-npm install
-npm install react-router-dom
-npm install tailwindcss @tailwindcss/vite
+
+
+cd frontend<br>
+npm install<br>
+npm install react-router-dom<br>
+npm install tailwindcss @tailwindcss/vite<br>
