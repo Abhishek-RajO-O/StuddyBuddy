@@ -1,4 +1,6 @@
 Cooking!
+
+
 studybuddy/
 │
 ├── backend/                     # (Later) Spring Boot project lives here
