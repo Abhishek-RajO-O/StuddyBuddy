@@ -1,10 +1,9 @@
-// import { useState } from 'react'
-
 function App() {
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div>
+      <h1>StudyBuddy App</h1>
+      <p>Routing not set up yet — Step 2 will add it.</p>
+    </div>
   );
 }
 
