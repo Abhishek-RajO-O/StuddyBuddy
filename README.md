@@ -1,7 +1,7 @@
 Cooking!
 
 
-studybuddy/
+studybuddy/ <br>
 │
 ├── backend/                     # (Later) Spring Boot project lives here
 │   └── (empty for now)
