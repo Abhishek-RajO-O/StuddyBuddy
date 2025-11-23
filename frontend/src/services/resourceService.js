@@ -1,8 +1,13 @@
 import apiClient from "./apiClient";
 
-const resourceService = {
-  getAll: async () => [],
-  add: async (data) => {},
-};
+export function getAllResources() {
+  return apiClient.get("/resources");
+}
 
-export default resourceService;
+export function addResource(data) {
+  return apiClient.post("/resources", data);
+}
+
+export function deleteResource(id) {
+  return apiClient.delete(`/resources/${id}`);
+}
